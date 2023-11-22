@@ -20,6 +20,6 @@ io.on('connection', (socket) => {
   })
 });
 
-server.listen(3000, () => {
-  console.log('server running at http://localhost:3000');
+app.listen(3000, '0.0.0.0', () => {
+  console.log(`Сервер слушает по адресу 0.0.0.0:3000`);
 });
